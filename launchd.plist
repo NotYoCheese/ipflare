@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+
+    <key>Label</key>
+    <string>com.demo.daemon.ipflare</string>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>StartInterval</key>
+    <integer>3600</integer>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/mike/dev/ipflare/stderr.log</string>
+
+    <key>StandardOutPath</key>
+    <string>/Users/mike/dev/ipflare/stdout.log</string>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/dev/mike/ipflare</string>
+
+    <key>ProgramArguments</key>
+    <array>
+      <string>/usr/local/bin/python3</string>
+      <string>update_ip.py</string>
+      <string></string>
+    </array>
+
+  </dict>
+</plist>
